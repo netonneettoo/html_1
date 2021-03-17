@@ -3,6 +3,8 @@
 <html>
 
 <head>
+	<meta charset="utf-8" />
+	<title>Título da página</title>
 	<style type="text/css">
 		header{
 			border-left-color:red;
@@ -23,7 +25,10 @@
 <body>
 	<!-- comentário -->
 	
-	<img src="jogos1.jpg">
+	<img src="jogos1.jpg" width="300">
+
+	<button type="button">Botão</button>
+	
 	<nav id="menu">
 		
 	</nav>
@@ -31,6 +36,14 @@
 <header>
 
 </header>
+
+<script>
+	let btn = document.querySelector('button');
+	let img = document.querySelector('img');
+	btn.addEventListener('click', function() {
+		img.setAttribute('width', 400)
+	})
+</script>
 
 </body>
 
